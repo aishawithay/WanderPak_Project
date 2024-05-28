@@ -1,0 +1,438 @@
+body {
+    background-color: #eef0eb;
+    color: #505b3e;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-left: 60px;
+    background-color:#505b3e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.h1header {
+    margin: 0;
+    font-size: 2.3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    color: #bac8b5;
+    text-decoration: none;
+}
+
+nav {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #bac8b5;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFF;
+}
+
+main {
+  max-width: 1200px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.intro {
+    background-image: url('images/main.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+    width: 100vw; /* Use viewport width */
+    position: relative; /* Ensure relative positioning */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+
+.intro h2 {
+    font-size: 7em;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 40px;
+    color: #f1eee5;
+}
+
+.horizontal-bar p{
+background-color: #80907a;
+padding: 40px;
+margin: 60px;
+margin-left: 100px;
+margin-right: 40px;
+text-align: center;
+font-size: 1.5em;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+color: seashell;
+}
+
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    justify-content: center;
+}
+
+.location-card {
+
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 200px;
+    height: 220px;
+    transition: transform 0.3s;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    display: flex; /* Add flexbox display */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Align items vertically */
+}
+.location-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.location-card:hover {
+    transform: translateY(-10px);
+}
+
+.location-card h3 a {
+    text-decoration: none;
+    font-size: 1.7em;
+    color: snow;
+    text-shadow: -1px -1px 0 #505b3e,  
+                 1px -1px 0 #505b3e,
+                -1px  1px 0 #505b3e,
+                 1px  1px 0 #505b3e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10px; /* Adjust the margin-top value to move the text closer to the top */
+    margin-bottom: 0; /
+}
+
+.location-card h3 {
+    margin: 0; /* Remove any default margin */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #505b3e;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    color: #bac8b5;
+    margin-top: 20px;
+}
+
+.container{
+    margin: auto;
+}
+.left{
+   text-align: center;
+}
+.h1{
+    font-size: 7em;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+
+   
+}
+.karachi
+{
+    background-image: url('images/karachii.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding: 10px;
+}
+.lahore
+{
+    background-image: url('images/lahore11.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.islamabad
+{
+    background-image: url('images/islamabadd.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.murree
+{
+    background-image: url('images/muree.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 650px;
+    height: 250px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin: 20px auto; /* Center the flip card horizontally within its container */
+    margin-top: 50px
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.flip-card-back {
+    background-color: #eef0eb;
+    color: black;
+    transform: rotateY(180deg);
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d1 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #bed7b5;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.d1:hover {
+    background-color: #505b3e;
+    color: white;
+    transition: 0.3s ease;
+}
+.carousel-container {
+    position: relative;
+    max-width: 600px; /* Ensure this matches your image width */
+    height: 450px;
+    margin: auto;
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%; /* Ensure each item takes up the full width of the container */
+    box-sizing: border-box;
+}
+
+.carousel img {
+    width: 100%; /* Each image takes up 100% of the item width */
+    border-radius: 10px;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+#heading{
+    font-size: 2em;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.h2{
+ 
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.headings
+{
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.right {
+    width: 28%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.d2{
+    margin: auto;
+    width: 45%;
+    border: 4px solid #505b3e;
+    margin: 40px;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.d2 p, .d2 ul, .d3 p, .d3 ul{
+    font-size: 1.2em;
+}
+
+.d2:hover{
+    background-color: #bac8b5;
+    transition: 0.3s ease;
+}
+.d3:hover{
+    background-color: #bac8b5;
+    transition: 0.3s ease;
+}
+.d2 ul li{
+    list-style-type: none;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.d3{
+    font-weight: bold;
+    padding: 15px;
+    margin: auto;
+    width: 45%;
+    border-radius: 20px;
+    border: 4px solid #505b3e;
+    margin: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer {
+    background-color: #505b3e;
+    color: #bac8b5;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-info {
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #bac8b5;
+    font-size: 1em;
+    text-decoration: none; /* Add this to remove underline */
+}
+
+.social-media a:hover {
+    color: #FFF;
+}
+
+@media (max-width: 600px) {
+    .location-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+   
+}
